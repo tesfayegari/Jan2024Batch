@@ -1,0 +1,22 @@
+{
+    "firstName": "John",
+    "lastName": "Do",
+    "age": 21,
+    "phone": "344-556-9876",
+    "dateOfBirth": "4/1/2001",
+    "pets": [
+        {
+            "petName": "Puppy",
+            "dateOfBirth": "3/3/2021",
+            "petType": "Dog"
+        },
+        {
+            "petName": "Kitty",
+            "dateOfBirth": "2/13/2022",
+            "petType": "Cat"
+        }
+    ],
+    "email": "johndo@email.com",
+    "address": "123 Main Av, Alexandria VA 20226"
+}
+
