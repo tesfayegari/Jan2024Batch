@@ -17,6 +17,7 @@
         }
     ],
     "email": "johndo@email.com",
-    "address": "123 Main Av, Alexandria VA 20226"
+    "address": "123 Main Av, Alexandria VA 20226",
+    "acknowledged": true
 }
 

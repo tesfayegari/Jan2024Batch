@@ -6,8 +6,12 @@ Example:
 
 Data Types
 
-Generic data types : String/Text. Number(0,1,2.1,...), Boolean(true/false)
-Arrays - are collection of any type 
-Object - a record represented by key/value Pair
-undefined - a value with no allocated memory 
-null - an empty memory 
+Generic data types :
+    String/Text. 
+    Number(0,1,2.1,...), 
+    Boolean(true/false)
+    undefined - a value with no allocated memory 
+    null - an empty memory 
+    Arrays - are collection of any type 
+    Object - a record represented by key/value Pair
+

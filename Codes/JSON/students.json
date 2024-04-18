@@ -18,7 +18,9 @@
             }
         ],
         "email": "johndo@email.com",
-        "address": "123 Main Av, Alexandria VA 20226"
+        "address": "123 Main Av, Alexandria VA 20226",
+        "acknowledged": true,
+        "picture": "https://images.generated.photos/XZ-tTi84Uk70NQkrvBthrqI5SqzfeDqJYbL6CkBezmg/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODczNzM0LmpwZw.jpg"
     },
     {
         "firstName": "Sifan",
@@ -39,7 +41,9 @@
             }
         ],
         "email": "sifan@email.com",
-        "address": "123 Main Av, Alexandria VA 20226"
+        "address": "123 Main Av, Alexandria VA 20226",
+        "acknowledged": false,
+        "picture": "https://images.generated.photos/kG8mzXwGapWj-Ctq5NLBtwtFupqXB50WRse5sG7g0vI/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/NDc3MjczLmpwZw.jpg"
     },
     {
         "firstName": "Aman",
@@ -47,18 +51,9 @@
         "age": 21,
         "phone": "658-556-9876",
         "dateOfBirth": "4/1/2000",
-        "pets": [
-            {
-                "petName": "Puppy",
-                "dateOfBirth": "3/3/2021",
-                "petType": "Dog"
-            },
-            {
-                "petName": "Kitty",
-                "dateOfBirth": "2/13/2022",
-                "petType": "Cat"
-            }
-        ],       
-        "address": "123 Main Av, Alexandria VA 20226"
+        "pets": [],       
+        "address": "123 Main Av, Alexandria VA 20226",
+        "acknowledged": false,
+        "picture": "https://images.generated.photos/jmRyp3JG83U84_hmbPO5Kf0u0CpMPGPbn26fCPCQwzk/rs:fit:256:256/czM6Ly9pY29uczgu/Z3Bob3Rvcy1wcm9k/LnBob3Rvcy92M18w/ODAzNTgyLmpwZw.jpg"
     }
 ]
