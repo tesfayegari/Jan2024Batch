@@ -5,101 +5,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document our first HTML</title>
+    <style>
+        /* All our css goes here  */
+        body{
+            margin: 0px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #horizontalNav {
+            background-color: black;
+            /* padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 16px; */
+            color: white;
+            /* padding: 16px; */
+            font-size: 1.2em;
+        }
+        #horizontalNav a {
+            padding: 16px;
+            display: inline-block; 
+            color: white;            
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        #horizontalNav a:hover {
+            background-color: rgb(48, 47, 47);
+        }
+        #verticalNav {
+            background-color: #f1f1f1;
+            width: 200px;
+            
+        }
+        .navItem a{
+            padding: 16px;
+            display: inline-block; 
+            width: 168px;        
+            text-decoration: none;
+            color: black;
+        }
+        .navItem a:hover {
+            background-color: #555;
+            color: white !important;
+        }
+        .galleryImage {
+            display: inline-block; 
+            width: 33%;
+        }
+        .galleryImage img {
+            vertical-align: top;
+            border-radius: 16px;
+        }
+        #myTable table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #myTable td, #myTable th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        #myTable r:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+    </style>
 </head>
 
 <body>
-    <!-- Links three links Home, About us, Contact us  tips link has URL, Title, open in new tab ...  -->
-    <a href="https://yahoo.com" target="_blank">Home</a> |
-    <a href="https://google.com" target="_blank">About us</a> |
-    <a href="https://amazon.com" target="_blank">contact us</a>
+    <!-- div is a block element with zero height and 0 width  -->
+    <div id="mainContainer">
+        <!-- Links three links Home, About us, Contact us  tips link has URL, Title, open in new tab ...  -->
+        <div id="horizontalNav">
+            <a href="https://yahoo.com" target="_blank">Home</a> |
+            <a href="https://google.com" target="_blank">About us</a> |
+            <a href="https://amazon.com" target="_blank">contact us</a>
+        </div>
 
-    <br> <!--new line -->
-    <a href="https://yahoo.com" target="_blank">Home</a> <br>
-    <a href="https://google.com" target="_blank">About us</a> <br>
-    <a href="https://amazon.com" target="_blank">contact us</a><br>
+        <div id="verticalNav">
+            <div class="navItem">
+                <a href="https://yahoo.com" target="_blank">Vertical 1</a>
+            </div>
+            <div class="navItem">
+                <a href="https://google.com" target="_blank">Vertical 2</a>
+            </div>
+            <div class="navItem">
+                <a href="https://amazon.com" target="_blank">Vertical 3</a>
+            </div>
+        </div>
+        <!-- heading 1  -->
+        <h1>Paragraph 1</h1>
+        <!-- Paragraphs are below    -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non lorem erat. Integer quis nisl sodales,
+            tempus nibh eget, auctor arcu. Nulla scelerisque tincidunt libero. In eros purus, hendrerit eu condimentum
+            porttitor, tincidunt ac augue. Sed placerat vulputate semper. Aliquam dictum neque sit amet odio hendrerit
+            ultrices. Curabitur fermentum, leo sit amet scelerisque congue, enim quam fringilla metus, in pharetra justo
+            lectus sed erat. Donec non felis a tellus tempor cursus gravida vitae eros. Morbi tempor mauris vitae est
+            auctor
+            molestie vel quis arcu. In hac habitasse platea dictumst. Sed tempus suscipit ex, a aliquam tortor gravida
+            quis.
+            Fusce volutpat sed arcu non porttitor.</p>
+        <!-- Bulletted list (unsorted list) -->
+        <ul>
+            <li class="navItem">Bullet 1</li>
+            <li class="navItem">Bullet 2</li>
+            <li class="navItem">Bullet 3</li>
+            <li class="navItem">Bullet 4</li>
+        </ul>
+        <!-- Table with three columns Name, Email and Phone -->
+        <div id="myTable">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                </tr>
+                <tr>
+                    <td>John Do</td>
+                    <td>John@email.com</td>
+                    <td>452-258-3658</td>
+                </tr>
+                <tr>
+                    <td>Adele Venz</td>
+                    <td>adele@email.com</td>
+                    <td>458-258-3658</td>
+                </tr>
+                <tr>
+                    <td>Adele Venz</td>
+                    <td>adele@email.com</td>
+                    <td>458-258-3658</td>
+                </tr>
+            </table>
+        </div>
+        <!-- Headign 2 -->
+        <h2>Paragraph 2</h2>
+        <!-- Paragraph 2 -->
+        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nisl
+            arcu, dignissim eu porta sed, pellentesque vitae quam. Curabitur posuere placerat fermentum. Aenean ex
+            sapien,
+            euismod id ipsum ac, faucibus fringilla leo. Sed feugiat egestas cursus. Nullam facilisis vulputate felis, a
+            elementum felis ornare et. Maecenas sed vestibulum augue, finibus suscipit elit. Nunc vel condimentum ex. Ut
+            bibendum id sem sit amet elementum. Morbi mi neque, facilisis a convallis ut, ultrices eu nisl.</p>
+        <!-- Ordered list (numbered list ) -->
+        <ol type="A">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ol>
+        <!-- images three images  all taking the parent width which is body element  -->
+        <div id="imageGallery">
+            <div class="galleryImage">
+                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg"
+                    alt="Cute Kitty" width="100%">
+            </div>
+            <div class="galleryImage">
+                <img src="https://alexandriaanimals.org/wp-content/uploads/2017/09/Mya-cover.jpg" alt="Cute Kitty"
+                    width="100%">
+            </div>
+            <div class="galleryImage">
+                <img src="https://img1.wsimg.com/isteam/ip/88025c49-eb04-40b7-8220-6272a1974953/277001957_4563950733711205_4107378007518004944.jpg"
+                    alt="Cute Kitty" width="100%">
+            </div>
+        </div>
+        <!-- heading 3 -->
+        <h3>Paragraph 3</h3>
+        <!-- Paragraph 3 -->
+        <p>Praesent porttitor diam non risus volutpat lacinia. Phasellus hendrerit velit ut diam lacinia, a scelerisque
+            odio
+            faucibus. In magna est, viverra et risus a, gravida molestie sapien. Nunc in odio commodo, fermentum felis
+            maximus, tempus odio. In mattis venenatis eros, ut vestibulum est rhoncus vitae. Aliquam ultrices lectus et
+            accumsan consectetur. Donec massa tellus, euismod et placerat ac, faucibus ac lorem. Sed vulputate finibus
+            lorem
+            non aliquet. Suspendisse tortor ante, dignissim id justo vitae, euismod lacinia augue. Mauris condimentum et
+            magna sit amet sagittis. Aenean eget diam et lorem bibendum cursus. Aliquam feugiat orci nisl, ut aliquet
+            ante
+            accumsan a. Aliquam aliquet risus ultricies faucibus scelerisque. Curabitur ut pharetra libero. In eu nibh
+            sed
+            justo varius tristique eu sit amet est. Integer egestas mollis scelerisque.</p>
 
+        <!-- Youtube Video  using iframe element  -->
+        <div id="youtubeVideo">
+            <iframe width="600" height="415" src="https://www.youtube.com/embed/kjBiXI-snFI?si=C6E8rqn2N5v_00N0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    <!-- heading 1  -->
-    <h1>Paragraph 1</h1>
-    <!-- Paragraphs are below    -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas non lorem erat. Integer quis nisl sodales,
-        tempus nibh eget, auctor arcu. Nulla scelerisque tincidunt libero. In eros purus, hendrerit eu condimentum
-        porttitor, tincidunt ac augue. Sed placerat vulputate semper. Aliquam dictum neque sit amet odio hendrerit
-        ultrices. Curabitur fermentum, leo sit amet scelerisque congue, enim quam fringilla metus, in pharetra justo
-        lectus sed erat. Donec non felis a tellus tempor cursus gravida vitae eros. Morbi tempor mauris vitae est auctor
-        molestie vel quis arcu. In hac habitasse platea dictumst. Sed tempus suscipit ex, a aliquam tortor gravida quis.
-        Fusce volutpat sed arcu non porttitor.</p>
-    <!-- Bulletted list (unsorted list) -->
-    <ul>
-        <li>Bullet 1</li>
-        <li>Bullet 2</li>
-        <li>Bullet 3</li>
-        <li>Bullet 4</li>
-    </ul>
+        </div>
+        <!-- Audio elemenmt  -->
+        <div id="myAudioFile">
+            <audio controls>
+            <source src="horse.ogg" type="audio/ogg">
+            <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        </div>
+        
 
-    <!-- Table with three columns Name, Email and Phone -->
-    <table border="1">
-        <tr>
-            <th>Name</th>
-            <th>Phone</th>
-            <th>Email</th>
-        </tr>
-        <tr>
-            <td>John Do</td>
-            <td>John@email.com</td>
-            <td>452-258-3658</td>
-        </tr>
-        <tr>
-            <td>Adele Venz</td>
-            <td>adele@email.com</td>
-            <td>458-258-3658</td>
-        </tr>
-        <tr>
-            <td>Adele Venz</td>
-            <td>adele@email.com</td>
-            <td>458-258-3658</td>
-        </tr>
-    </table>
-    <!-- Headign 2 -->
-    <h2>Paragraph 2</h2>
-    <!-- Paragraph 2 -->
-    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nisl
-        arcu, dignissim eu porta sed, pellentesque vitae quam. Curabitur posuere placerat fermentum. Aenean ex sapien,
-        euismod id ipsum ac, faucibus fringilla leo. Sed feugiat egestas cursus. Nullam facilisis vulputate felis, a
-        elementum felis ornare et. Maecenas sed vestibulum augue, finibus suscipit elit. Nunc vel condimentum ex. Ut
-        bibendum id sem sit amet elementum. Morbi mi neque, facilisis a convallis ut, ultrices eu nisl.</p>
-    <!-- Ordered list (numbered list ) -->
-    <ol type="A">
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-    </ol>
+        <!-- Video html 5 -->
+      <div id="myVideos">
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+            Your browser does not support the video tag.
+        </video>
+      </div>
+       
+    </div>
 
-    <!-- images three images  all taking the parent width which is body element  -->
-    <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/12/v2-cute-cat-picture.jpg"
-        alt="Cute Kitty" width="100%">
-    <img src="https://alexandriaanimals.org/wp-content/uploads/2017/09/Mya-cover.jpg" alt="Cute Kitty" width="100%">
-    <img src="https://img1.wsimg.com/isteam/ip/88025c49-eb04-40b7-8220-6272a1974953/277001957_4563950733711205_4107378007518004944.jpg"
-        alt="Cute Kitty" width="100%">
-
-    <!-- heading 3 -->
-    <h3>Paragraph 3</h3>
-    <!-- Paragraph 3 -->
-    <p>Praesent porttitor diam non risus volutpat lacinia. Phasellus hendrerit velit ut diam lacinia, a scelerisque odio
-        faucibus. In magna est, viverra et risus a, gravida molestie sapien. Nunc in odio commodo, fermentum felis
-        maximus, tempus odio. In mattis venenatis eros, ut vestibulum est rhoncus vitae. Aliquam ultrices lectus et
-        accumsan consectetur. Donec massa tellus, euismod et placerat ac, faucibus ac lorem. Sed vulputate finibus lorem
-        non aliquet. Suspendisse tortor ante, dignissim id justo vitae, euismod lacinia augue. Mauris condimentum et
-        magna sit amet sagittis. Aenean eget diam et lorem bibendum cursus. Aliquam feugiat orci nisl, ut aliquet ante
-        accumsan a. Aliquam aliquet risus ultricies faucibus scelerisque. Curabitur ut pharetra libero. In eu nibh sed
-        justo varius tristique eu sit amet est. Integer egestas mollis scelerisque.</p>
-
-    <!-- Youtube Video  using iframe element  -->
-    <iframe width="100%" height="415" src="https://www.youtube.com/embed/kjBiXI-snFI?si=C6E8rqn2N5v_00N0"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </body>
 
 </html>

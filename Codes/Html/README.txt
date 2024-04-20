@@ -11,7 +11,7 @@ HTML : Structure of the Web (content of the web ) is represented by HTML
     Table table, tr, th, td,
     audio 
     vidoe 
-    youtube
+    youtube using iframe element
     new line  br
     block element div
     inline element  span
@@ -37,6 +37,32 @@ Each element can have one or more attribute. Attributes are property value pain 
 
 example in  <html lang="en"> </html> lang is an attribute with value = en=us
 
+CSS  Cascading Style Sheet 
+
+Syntax: 
+selector{
+    property: value;
+    property2: value2;
+}
+
+What is selector: Selector can be any targetted element by name, or can be id of an element or can be class of an element 
+protperty: is what we wanted to change, example font-size is one of the property. and Value is value associated with property
+
+example element selector 
+
+p {
+    font-color: red;
+}
+
+example id selector 
+#NameofID {
+    font-color: bloe
+}
+
+example of class selector 
+.className {
+    property: value;
+}
 
 
 

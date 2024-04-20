@@ -1,0 +1,29 @@
+Flushot Signup Form and Confirmation 
+
+Available Slots for Flushot 
+April 23, 2024 
+10:00 AM (2 People)
+10:15 AM (2 People)
+10:30 AM (2 People)
+.....
+Break between 12:00 PM - 12:30
+....
+12:30 PM (2 People) 
+12:45 PM (2 People)
+....
+5:00 PM (2 People) 
+
+April 24, 2024 
+10:00 AM (2 People)
+10:15 AM (2 People) 
+10:30 AM (2 People)
+.....
+Break between 12:00 PM - 12:30
+....
+12:30 PM (2 People) 
+12:45 PM (2 People)
+....
+5:00 PM (2 People) 
+
+When User Signup they will get a confirmation that says you are signed up for x date, tt time 
+The same user when he goes back to the form he wont get the signup since he already d
