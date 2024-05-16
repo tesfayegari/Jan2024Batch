@@ -18,11 +18,12 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Advanced
     "group": { "default": "Advanced" },
-    "title": { "default": "HelloWorld" },
-    "description": { "default": "HelloWorld description" },
-    "officeFabricIconFontName": "Page",
+    "title": { "default": "All Lists & Libraries" },
+    "description": { "default": "This webpart shows all the lists and libraries in the site" },
+    "officeFabricIconFontName": "AlignJustify",
     "properties": {
-      "description": "HelloWorld"
+      "description": "All Lists",
+      "webpartTitle": "Webpart Title"
     }
   }]
 }

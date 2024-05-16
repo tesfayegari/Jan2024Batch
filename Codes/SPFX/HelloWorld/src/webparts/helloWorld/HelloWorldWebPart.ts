@@ -11,6 +11,7 @@ import styles from './HelloWorldWebPart.module.scss';
 import * as strings from 'HelloWorldWebPartStrings';
 
 export interface IHelloWorldWebPartProps {
+  webpartTitle: string;
   description: string;
 }
 
@@ -22,6 +23,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
   public render(): void {
     this.domElement.innerHTML = `
     <section class="${styles.helloWorld} ${!!this.context.sdks.microsoftTeams ? styles.teams : ''}">
+      <h2 style="margin-top:0;">${escape(this.properties.webpartTitle)}</h2>
       <div class="${styles.welcome}">
         <img alt="" src="${this._isDarkTheme ? require('./assets/welcome-dark.png') : require('./assets/welcome-light.png')}" class="${styles.welcomeImage}" />
         <h2>Well done, ${escape(this.context.pageContext.user.displayName)}!</h2>
@@ -33,16 +35,7 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
         <p>
         The SharePoint Framework (SPFx) is a extensibility model for Microsoft Viva, Microsoft Teams and SharePoint. It's the easiest way to extend Microsoft 365 with automatic Single Sign On, automatic hosting and industry standard tooling.
         </p>
-        <h4>Learn more about SPFx development:</h4>
-          <ul class="${styles.links}">
-            <li><a href="https://aka.ms/spfx" target="_blank">SharePoint Framework Overview</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-graph" target="_blank">Use Microsoft Graph in your solution</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-teams" target="_blank">Build for Microsoft Teams using SharePoint Framework</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-viva" target="_blank">Build for Microsoft Viva Connections using SharePoint Framework</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-store" target="_blank">Publish SharePoint Framework applications to the marketplace</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-api" target="_blank">SharePoint Framework API reference</a></li>
-            <li><a href="https://aka.ms/m365pnp" target="_blank">Microsoft 365 Developer Community</a></li>
-          </ul>
+        <h4>Learn more about SPFx development:</h4>          
       </div>
     </section>`;
   }
@@ -109,11 +102,30 @@ export default class HelloWorldWebPart extends BaseClientSideWebPart<IHelloWorld
       pages: [
         {
           header: {
-            description: strings.PropertyPaneDescription
+            description: "All Lists Configuration 1"
           },
           groups: [
             {
-              groupName: strings.BasicGroupName,
+              groupName: "Basic Configuration",
+              groupFields: [
+                PropertyPaneTextField('webpartTitle', {
+                  label: "Webpart Title"
+                }),
+                PropertyPaneTextField('description', {
+                  label: "Webpart Description",
+                  multiline: true
+                })
+              ]
+            }
+          ]
+        },
+        {
+          header: {
+            description: "All Lists Configuration 2"
+          },
+          groups: [
+            {
+              groupName: "Second Group Config",
               groupFields: [
                 PropertyPaneTextField('description', {
                   label: strings.DescriptionFieldLabel
