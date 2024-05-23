@@ -6,3 +6,4 @@ export interface Student {
     phone?: string;
     department: string;
 }
+
