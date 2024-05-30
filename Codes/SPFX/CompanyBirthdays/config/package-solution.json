@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "company-birthdays-client-side-solution",
+    "id": "42940569-cc1a-4ec5-b585-a1032e788fe0",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.19.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "company-birthdays description"
+      },
+      "longDescription": {
+        "default": "company-birthdays description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "company-birthdays Feature",
+        "description": "The feature that activates elements of the company-birthdays solution.",
+        "id": "70837242-f0d9-4ec3-97c7-6673b4107136",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/company-birthdays.sppkg"
+  }
+}
